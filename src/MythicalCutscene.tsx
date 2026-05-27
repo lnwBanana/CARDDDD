@@ -1193,12 +1193,12 @@ export default function MythicalCutscene({ card, phase, onComplete, onBoom, dura
       }
 
       // ── Chains ───────────────────────────────────────────────
-      if (f < T_SYMBOL - 10) {
-        chainsRef.current.forEach(c => {
-          const glow = (c.state === 1 || c.state === 2) ? tensionAmt : 0;
-          drawChain(ctx, c, glow);
-        });
-      }
+        if (f < T_IMPACT) {
+          chainsRef.current.forEach(c => {
+        const glow = (c.state === 1 || c.state === 2) ? tensionAmt : 0;
+        drawChain(ctx, c, glow);
+      });
+    }
 
       // ── Shockwaves ────────────────────────────────────────────
       shockwavesRef.current = stepShockwaves(shockwavesRef.current);
