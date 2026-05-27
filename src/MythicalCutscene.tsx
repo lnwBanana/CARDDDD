@@ -1018,11 +1018,11 @@ export default function MythicalCutscene({ card, phase, onComplete, onBoom, dura
       // ── Audio ────────────────────────────────────────────────
       if (f >= T_CHAIN_FLY && !chainSfxDone) {
         chainSfxDone = true;
-        new Audio("/wiki%20SFX/SFX%20%E0%B8%AA%E0%B8%B8%E0%B9%88%E0%B8%A1/%E0%B9%82%E0%B8%8B%E0%B9%88.mp3").play().catch(() => {});
+        new Audio("/wiki SFX/SFX สุ่ม/โซ่.mp3").play().catch(() => {});
       }
       if (f >= T_PRESSURE && !bgmDone) {
         bgmDone = true;
-        const bgm = new Audio("/wiki%20SFX/%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8A%E0%B8%B2/Mythical.flac");
+        const bgm = new Audio("/wiki SFX/เสียงเพลงกาชา/Mythical.flac");
         bgm.volume = 1;
         bgm.play().catch(() => {});
         bgmRef.current = bgm;
@@ -1048,8 +1048,8 @@ export default function MythicalCutscene({ card, phase, onComplete, onBoom, dura
       if (f >= T_BREAK1 && !break1Done) {
         break1Done = true;
         if (!breakSfxDone) {
-          breakSfxDone = true;
-          new Audio("/wiki%20SFX/SFX%20%E0%B8%AA%E0%B8%B8%E0%B9%88%E0%B8%A1/%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B9%81%E0%B8%95%E0%B8%81.mp3").play().catch(() => {});
+          breakSfxDone = true;c
+          new Audio("/wiki SFX/SFX สุ่ม/โซ่แตก.mp3").play().catch(() => {});
         }
         chainsRef.current.forEach((c, i) => {
           if (i % 3 === 0) {
