@@ -1048,7 +1048,7 @@ export default function MythicalCutscene({ card, phase, onComplete, onBoom, dura
       if (f >= T_BREAK1 && !break1Done) {
         break1Done = true;
         if (!breakSfxDone) {
-          breakSfxDone = true;c
+          breakSfxDone = true;
           new Audio("/wiki SFX/SFX สุ่ม/โซ่แตก.mp3").play().catch(() => {});
         }
         chainsRef.current.forEach((c, i) => {
